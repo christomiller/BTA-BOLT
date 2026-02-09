@@ -64,37 +64,48 @@
 </table>
 
 
-
-
 <h1><u>Trail Work Request</u></h1>
 
 
-
-
-
-<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; font-family: Arial, sans-serif;">
-    <tr>
-        <th align="left" width="35%">Property Info</th>
-        <th align="left" width="65%"><b> </b></th>
-    </tr>
-
-    <tr><td>Property name</td><td>Alpers Woodlot</td></tr>
-    <tr><td>Location of property (street address)</td><td>Off Herrick Rd. across from Wildcat parking lot</td></tr>
-    <tr><td>Best Entry into property</td><td>Off Herrick Rd. across from Wildcat parking lot</td></tr>
-    <tr><td>Size in acres</td><td>14</td></tr>
-    <tr><td>Present use of restricted property</td><td>Boating and passive recreation</td></tr>
-    <tr><td>Current owner's name</td><td>BTA.BOLT</td></tr>
-    <tr><td>Conservation Resctiction?</td><td>No</td></tr>
-    <tr><td>CR Owner</td><td>none</td></tr>
-
-</table>
-
 <form>
+  <label for="location">Select the Property requiring Trail Work:</label>
+  <select id="location" name="location">
+    <option value="">-- Please choose an option --</option>
+    <option value="Achenbach">Achenbach</option>
+    <option value="Alpers Woodlot">Alpers Woodlot</option>
+    <option value="Bailey Farm">Bailey Farm</option>
+    <option value="Barker Land">Barker Land</option>
+    <option value="Boxford Common">Boxford Common</option>
+    <option value="Boxford Town Forest">Boxford Town Forest</option>
+    <option value="Cargill Field">Cargill Field</option>
+    <option value="Cedar Pond Society">Cedar Pond Society</option>
+    <option value="Chadwick Mill">Chadwick Mill</option>
+    <option value="Coolidge 100 Acres">Coolidge 100 Acres</option>
+    <option value="Davis Hayfield">Davis Hayfield</option>
+    <option value="DeBrule">DeBrule</option>
+    <option value="Dorman Woods">Dorman Woods</option>
+    <option value="Ericson Woods">Ericson Woods</option>
+    <option value="Fishbrook Property">Fishbrook Property</option>
+    <option value="French Woodlot">French Woodlot</option>
+    <option value="Hemlock Junction">Hemlock Junction</option>
+    <option value="Hills Property">Hills Property</option>
+    <option value="Mary Herrick">Mary Herrick</option>
+    <option value="Owen Land">Owen Land</option>
+    <option value="Perkins Woods">Perkins Woods</option>
+    <option value="Potter's Farm">Potter's Farm</option>
+    <option value="Price Property">Price Property</option>
+    <option value="Redington Woods">Redington Woods</option>
+    <option value="Shaven Crown">Shaven Crown</option>
+    <option value="Shulman Woods">Shulman Woods</option>
+    <option value="Stevens Pond">Stevens Pond</option>
+    <option value="Townsend Farms">Townsend Farms</option>
+  </select>
+
 
     <label>1. Date of Request:</label>
     <input type="date" name="request_date">
 
-   <label>2. Issue</label>
+   <label>2. Issue:</label>
 <select name="trail_issue">
     <option value="" disabled selected>Select a reason</option>
     <option value="tree_dwon">Tree Down  - Hand Saw</option>
@@ -105,13 +116,13 @@
 
   
 
-    <label>3. If other, describe here:</label>
- <textarea name="inspection_details"></textarea>
+    <label>3. Describe required work here:</label>
+ <textarea name="work_details"></textarea>
 
 
 
     <label>4. Describe the location on trail:</label>
-    <textarea name="inspection_details"></textarea>
+    <textarea name="location_details"></textarea>
 
     
 
@@ -142,7 +153,7 @@
 
 <div style="margin-top: 30px; text-align: center;">
     <button type="button" onclick="saveToPDF()" style="padding: 10px 20px; font-size: 16px;">
-        Send to Work Report
+        Send to Trail Work Reports
     </button>
 </div>
 </form>
@@ -162,7 +173,7 @@ function saveToPDF() {
         let position = 0;
         pdf.addImage(imgData, "PNG", 0, position, pdfWidth, pdfHeight);
 
-        pdf.save("Conservation_Monitoring_Report.pdf");
+        pdf.save("BTA_Work_Report.pdf");
     });
 }
 </script>
