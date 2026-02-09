@@ -173,6 +173,29 @@
         <label>Signature/Initials:</label>
         <input type="text" name="signature">
     </div>
+
+<i>Photos for Report (up to 3)</i>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label>Select photo 1 to upload your report</label><br>
+        <input type="file" name="uploadedFile" required><br>
+        <input type="submit" value="Upload File"></ul>
+    </form>
+
+
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label>Select photo 2 to upload your report</label><br>
+        <input type="file" name="uploadedFile" required><br>
+        <input type="submit" value="Upload File"></ul>
+    </form>
+
+
+	    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label>Select photo 3 to upload your report</label><br>
+        <input type="file" name="uploadedFile" required><br>
+        <input type="submit" value="Upload File"></ul>
+    </form>
+
+	
 <div style="margin-top: 30px; text-align: center;">
     <button type="button" onclick="saveToPDF()" style="padding: 10px 20px; font-size: 16px;">
         Save to PDF
