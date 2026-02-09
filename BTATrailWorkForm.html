@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>BTA Trail Work Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 80px;
+        }
+        .small {
+            width: 200px;
+        }
+        .signature-line {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<table width="100%" cellpadding="10" cellspacing="0" style="border-collapse: collapse;">
+    <tr>
+        <td width="120" style="background-color: #A9A9A9; text-align: center; vertical-align: middle;">
+            <img
+                src="https://static1.squarespace.com/static/5b158505af20962fc8866abc/t/5f13403d0bbd2104ee2028f8/1595097151250/static1.squarespace.png"
+                alt="Boxford Trails Association Logo"
+                style="max-width: 100px; height: auto;"
+            >
+        </td>
+        <td style="vertical-align: middle;">
+            <strong>
+                Boxford Trails Association / Boxford Open Land Trust, Inc. (BTA/BOLT)<br>
+                7 Elm St, P.O. Box 95, Boxford, MA 01921<br>
+                978-887-7031
+            </strong>
+        </td>
+    </tr>
+</table>
+
+
+
+
+<h1><u>Trail Work Request</u></h1>
+
+
+
+
+
+<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; font-family: Arial, sans-serif;">
+    <tr>
+        <th align="left" width="35%">Property Info</th>
+        <th align="left" width="65%"><b> </b></th>
+    </tr>
+
+    <tr><td>Property name</td><td>Alpers Woodlot</td></tr>
+    <tr><td>Location of property (street address)</td><td>Off Herrick Rd. across from Wildcat parking lot</td></tr>
+    <tr><td>Best Entry into property</td><td>Off Herrick Rd. across from Wildcat parking lot</td></tr>
+    <tr><td>Size in acres</td><td>14</td></tr>
+    <tr><td>Present use of restricted property</td><td>Boating and passive recreation</td></tr>
+    <tr><td>Current owner's name</td><td>BTA.BOLT</td></tr>
+    <tr><td>Conservation Rescticion?</td><td>No</td></tr>
+    <tr><td>CR Owner</td><td>none</td></tr>
+
+</table>
+
+<form>
+
+    <label>1. Date of Request:</label>
+    <input type="date" name="request_date">
+
+   <label>2. Issue</label>
+<select name="trail_issue">
+    <option value="" disabled selected>Select a reason</option>
+    <option value="tree_dwon">Tree Down  - Hand Saw</option>
+   <option value="tree_dwon">Tree Down  - Electric Saw</option>
+    <option value="bridge_work">Bridge Work</option>
+    <option value="Follow-up">Other</option>
+</select>
+
+  
+
+    <label>3. If other, describe here:</label>
+ <textarea name="inspection_details"></textarea>
+
+
+
+    <label>4. Describe the location on trail:</label>
+    <textarea name="inspection_details"></textarea>
+
+    
+
+    <label>5. Reporter's Name:</label>
+    <input type="text" name="team_leader">
+
+ i>Photos of Work</i>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label>Selet local file to upload your report</label><br>
+        <input type="file" name="uploadedFile" required><br>
+        <input type="submit" value="Upload File"></ul>
+    </form>
+
+<div style="margin-top: 30px; text-align: center;">
+    <button type="button" onclick="saveToPDF()" style="padding: 10px 20px; font-size: 16px;">
+        Send to Work Report
+    </button>
+</div>
+</form>
+<script>
+function saveToPDF() {
+    const { jsPDF } = window.jspdf;
+
+    const element = document.body; // capture entire page
+
+    html2canvas(element, { scale: 2 }).then(canvas => {
+        const imgData = canvas.toDataURL("image/png");
+
+        const pdf = new jsPDF("p", "mm", "letter");
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+        let position = 0;
+        pdf.addImage(imgData, "PNG", 0, position, pdfWidth, pdfHeight);
+
+        pdf.save("Conservation_Monitoring_Report.pdf");
+    });
+}
+</script>
+
+</body>
+</html>
