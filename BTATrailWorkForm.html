@@ -117,13 +117,28 @@
 
     <label>5. Reporter's Name:</label>
     <input type="text" name="team_leader">
-
- i>Photos of Work</i>
+<br><br>
+ <i>Photos of Work (up to 3)</i>
     <form action="upload.php" method="post" enctype="multipart/form-data">
-        <label>Selet local file to upload your report</label><br>
+        <label>Select photo 1 to upload your report</label><br>
         <input type="file" name="uploadedFile" required><br>
         <input type="submit" value="Upload File"></ul>
     </form>
+
+
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label>Select photo 2 to upload your report</label><br>
+        <input type="file" name="uploadedFile" required><br>
+        <input type="submit" value="Upload File"></ul>
+    </form>
+
+
+	    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label>Select photo 3 to upload your report</label><br>
+        <input type="file" name="uploadedFile" required><br>
+        <input type="submit" value="Upload File"></ul>
+    </form>
+	
 
 <div style="margin-top: 30px; text-align: center;">
     <button type="button" onclick="saveToPDF()" style="padding: 10px 20px; font-size: 16px;">
