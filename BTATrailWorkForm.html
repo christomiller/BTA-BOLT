@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>BTA Trail Work Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 80px;
+        }
+        .small {
+            width: 200px;
+        }
+        .signature-line {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<table width="100%" cellpadding="10" cellspacing="0" style="border-collapse: collapse;">
+    <tr>
+        <td width="120" style="background-color: #A9A9A9; text-align: center; vertical-align: middle;">
+            <img
+                src="https://static1.squarespace.com/static/5b158505af20962fc8866abc/t/5f13403d0bbd2104ee2028f8/1595097151250/static1.squarespace.png"
+                alt="Boxford Trails Association Logo"
+                style="max-width: 100px; height: auto;"
+            >
+        </td>
+        <td style="vertical-align: middle;">
+            <strong>
+                Boxford Trails Association / Boxford Open Land Trust, Inc. (BTA/BOLT)<br>
+                7 Elm St, P.O. Box 95, Boxford, MA 01921<br>
+                978-887-7031
+            </strong>
+        </td>
+    </tr>
+</table>
+
+
+<h1><u>Trail Work Request</u></h1>
+
+
+<form>
+  <label for="location">Select the Property requiring Trail Work:</label>
+  <select id="location" name="location">
+    <option value="">-- Please choose an option --</option>
+    <option value="Achenbach">Achenbach</option>
+    <option value="Alpers Woodlot">Alpers Woodlot</option>
+    <option value="Bailey Farm">Bailey Farm</option>
+    <option value="Barker Land">Barker Land</option>
+    <option value="Boxford Common">Boxford Common</option>
+    <option value="Boxford Town Forest">Boxford Town Forest</option>
+    <option value="Cargill Field">Cargill Field</option>
+    <option value="Cedar Pond Society">Cedar Pond Society</option>
+    <option value="Chadwick Mill">Chadwick Mill</option>
+    <option value="Coolidge 100 Acres">Coolidge 100 Acres</option>
+    <option value="Davis Hayfield">Davis Hayfield</option>
+    <option value="DeBrule">DeBrule</option>
+    <option value="Dorman Woods">Dorman Woods</option>
+    <option value="Ericson Woods">Ericson Woods</option>
+    <option value="Fishbrook Property">Fishbrook Property</option>
+    <option value="French Woodlot">French Woodlot</option>
+    <option value="Hemlock Junction">Hemlock Junction</option>
+    <option value="Hills Property">Hills Property</option>
+    <option value="Mary Herrick">Mary Herrick</option>
+    <option value="Owen Land">Owen Land</option>
+    <option value="Perkins Woods">Perkins Woods</option>
+    <option value="Potter's Farm">Potter's Farm</option>
+    <option value="Price Property">Price Property</option>
+    <option value="Redington Woods">Redington Woods</option>
+    <option value="Shaven Crown">Shaven Crown</option>
+    <option value="Shulman Woods">Shulman Woods</option>
+    <option value="Stevens Pond">Stevens Pond</option>
+    <option value="Townsend Farms">Townsend Farms</option>
+  </select>
+
+
+    <label>1. Date of Request:</label>
+    <input type="date" name="request_date">
+
+   <label>2. Issue:</label>
+<select name="trail_issue">
+    <option value="" disabled selected>Select a reason</option>
+    <option value="tree_dwon">Tree Down  - Hand Saw</option>
+   <option value="tree_dwon">Tree Down  - Electric Saw</option>
+    <option value="bridge_work">Bridge Work</option>
+    <option value="Follow-up">Other</option>
+</select>
+
+  
+
+    <label>3. Describe required work here:</label>
+ <textarea name="work_details"></textarea>
+
+
+
+    <label>4. Describe the location on trail:</label>
+    <textarea name="location_details"></textarea>
+
+    
+
+    <label>5. Reporter's Name:</label>
+    <input type="text" name="team_leader">
+<br><br>
+ <i>Photos of Work (up to 3)</i>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label>Select photo 1 to upload your report</label><br>
+        <input type="file" name="uploadedFile" required><br>
+        <input type="submit" value="Upload File"></ul>
+    </form>
+
+
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label>Select photo 2 to upload your report</label><br>
+        <input type="file" name="uploadedFile" required><br>
+        <input type="submit" value="Upload File"></ul>
+    </form>
+
+
+	    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label>Select photo 3 to upload your report</label><br>
+        <input type="file" name="uploadedFile" required><br>
+        <input type="submit" value="Upload File"></ul>
+    </form>
+	
+
+<div style="margin-top: 30px; text-align: center;">
+    <button type="button" onclick="saveToPDF()" style="padding: 10px 20px; font-size: 16px;">
+        Send to Trail Work Reports
+    </button>
+</div>
+</form>
+<script>
+function saveToPDF() {
+    const { jsPDF } = window.jspdf;
+
+    const element = document.body; // capture entire page
+
+    html2canvas(element, { scale: 2 }).then(canvas => {
+        const imgData = canvas.toDataURL("image/png");
+
+        const pdf = new jsPDF("p", "mm", "letter");
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+        let position = 0;
+        pdf.addImage(imgData, "PNG", 0, position, pdfWidth, pdfHeight);
+
+        pdf.save("BTA_Work_Report.pdf");
+    });
+}
+</script>
+
+</body>
+</html>
