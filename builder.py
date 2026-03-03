@@ -34,20 +34,21 @@ def setHtml(html, prop):
     
     
 #    CR PDF
-    newPage = newPage.replace('__CR_PDF__', '')
+    newPage = newPage.replace('__CR_PDF__', 'conservation_restriction.pdf')
 #    prop['Property'])
 #    EASEMENT PDF
-    newPage = newPage.replace('__EASEMENT_PDF__', '')
+    newPage = newPage.replace('__EASEMENT_PDF__', 'easement.pdf')
 #    prop['Property'])
 #    LEASE
-    newPage = newPage.replace('__LEASE__', '')
+    newPage = newPage.replace('__LEASE__', 'lease.pdf')
 #    prop['Property']),
 #    DEED PDF
-    newPage = newPage.replace('__DEED_PDF__', '')
+    newPage = newPage.replace('__DEED_PDF__', 'deed.pdf')
 #    prop['Property'])
 #    SCANNED DOCS PDF
-    newPage = newPage.replace('__DOCS_PDF__', '')
+    newPage = newPage.replace('__DOCS_PDF__', 'scanned_docs.pdf')
 #    prop['Property'])
+    newPage = newPage.replace('__PROP_MR_PDF__', 'https://christomiller.github.io/BTA-BOLT/')
     
 #    PropertyName
     newPage = newPage.replace('__PROPERTY_NAME__', prop['Property'])
