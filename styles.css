@@ -1,0 +1,102 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #1b3a2f;
+    margin: 0;
+    padding: 20px 20px 40px 20px;  /* adds top spacing */
+}
+
+/* ===== HEADER TABLE ===== */
+.header-table {
+    background-color: #c8e6c9;   /* Soft green header */
+    border: none;
+}
+
+.header-table td {
+    border: none;
+    color: #1b3a2f;
+}
+
+/* Do NOT alter logo image */
+.header-table img {
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+/* Headings */
+h1 {
+    color: #2e7d32;
+    border-bottom: 2px solid #81c784;
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: #388e3c;
+    margin-top: 30px;
+}
+
+/* ===== CONTENT TABLES ===== */
+table:not(.header-table) {
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+table:not(.header-table) th {
+    background-color: #a5d6a7;
+    color: #1b3a2f;
+}
+
+table:not(.header-table) td,
+table:not(.header-table) th {
+    border: 1px solid #81c784;
+    padding: 8px;
+}
+
+table:not(.header-table) tr:nth-child(even) {
+    background-color: #f1f8f4;
+}
+
+/* Links */
+a {
+    color: #1b5e20;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #004d40;
+    text-decoration: underline;
+}
+
+/* Forms */
+form {
+    background-color: #f1f8f4;
+    padding: 15px;
+    border: 1px solid #a5d6a7;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+/* Buttons */
+input[type="submit"] {
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #43a047;
+}
+
+/* Trail map image styling only */
+img {
+    border: 2px solid #a5d6a7;
+    padding: 4px;
+    background-color: #ffffff;
+}
