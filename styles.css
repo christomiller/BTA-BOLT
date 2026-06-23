@@ -100,3 +100,31 @@ img {
     padding: 4px;
     background-color: #ffffff;
 }
+
+/* ===== LEGAL DOCS PAGES ===== */
+.legal-note {
+    background-color: #f1f8f4;
+    border: 1px solid #a5d6a7;
+    border-left: 4px solid #66bb6a;
+    padding: 10px 14px;
+    margin: 15px 0 20px 0;
+    border-radius: 4px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.summary-list {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.summary-list li {
+    margin-bottom: 4px;
+}
+
+.summary-list li:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,637 @@
+{
+  "achenbach": {
+    "property_name": "Achenbach",
+    "documents": [
+      {
+        "file": "Achenbach_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (1997)",
+        "summary": "Recorded Conservation Restriction (Essex South District Registry of Deeds, Book 14335, Pages 125-135) granted by Rachel B. Achenbach and Carolyn A. Ingraham to BTA/BOLT, Inc. in September 1997, covering the 437 Ipswich Road property. Approved by the Secretary of Energy and Environmental Affairs on 9/17/1997."
+      },
+      {
+        "file": "Achenbach_Plan.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Plans of Land",
+        "summary": "Subdivision plan, recorded plan of land, and locus map for the Achenbach property."
+      },
+      {
+        "file": "Achenbach_Photos.pdf",
+        "type": "Photos",
+        "title": "Site & Monitoring Photos",
+        "summary": "Aerial and ground-level monitoring photographs taken in 2007-2008."
+      },
+      {
+        "file": "Achenbach_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Application & Monitoring Records",
+        "summary": "CR application, field inspection forms, narrative property summaries, and related correspondence."
+      }
+    ]
+  },
+  "alpers": {
+    "property_name": "Alpers Woodlot",
+    "documents": [
+      {
+        "file": "Alpers_Closing_Documents.pdf",
+        "type": "Other / Closing Packet",
+        "title": "1994 Purchase Closing Documents",
+        "summary": "Title indemnity agreement, real-estate appraisal, disbursement authorization, and compliance agreement from the 1994 fee purchase of the Herrick Road property from Rebekah F. Taube and the Estate of Minna Alpers by the Boxford Trails Association. No standalone deed instrument was found in this scan."
+      }
+    ],
+    "note": "The deed itself was not located in this scan batch \u2014 only the closing/purchase paperwork."
+  },
+  "bailey": {
+    "property_name": "Bailey Farm",
+    "documents": [
+      {
+        "file": "Bailey_Farm_CR_partial.pdf",
+        "type": "Conservation Restriction (partial)",
+        "title": "Conservation Restriction (2017) \u2014 pages 7-17 only",
+        "summary": "Partial copy of a 2017 Conservation Restriction granted by the Essex County Greenbelt Association to BTA/BOLT, approved by the Haverhill City Council and Mayor. Pages 1-6 of the recorded instrument are missing from this scan; only the legal text, signature/approval pages, and exhibit plan are present."
+      }
+    ],
+    "note": "Pages 1-6 of the CR are missing from the source scan \u2014 recommend re-scanning the complete document."
+  },
+  "main_st_471": {
+    "property_name": "471 Main Street (Boxford Common Addition)",
+    "is_new_property": true,
+    "documents": [
+      {
+        "file": "MainSt471_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (2023)",
+        "summary": "Conservation Restriction granted by the Essex County Greenbelt Association to BTA/BOLT in 2023, covering a 42.079-acre parcel at 471 Main Street, Boxford (Mullaney/Elmlea Partnership Trust). The parcel directly abuts the 75-acre Boxford Common and the 24-acre Lord Homestead CR. Approved by the Secretary of Energy and Environmental Affairs on 7/25/2023."
+      },
+      {
+        "file": "MainSt471_Plan.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Exhibit Plan of Premises",
+        "summary": "Recorded plan showing Parcel F and Parcel A of the protected premises."
+      }
+    ],
+    "note": "Newly identified property, not currently on the 28-property list. Recommend adding as a new property entry."
+  },
+  "cargill": {
+    "property_name": "Cargill Field",
+    "documents": [
+      {
+        "file": "Cargill_Field_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (2008)",
+        "summary": "Conservation Restriction held by BTA/BOLT, Inc., executed June 2008, with Estoppel Certificates and approval by the Secretary of Environmental Affairs."
+      },
+      {
+        "file": "Cargill_Field_Deed.pdf",
+        "type": "Deed",
+        "title": "Recorded Deed",
+        "summary": "Recorded deed (Book 12770, Page 523) conveying the property to the Town of Boxford Conservation Commission, with metes-and-bounds description."
+      },
+      {
+        "file": "Cargill_Field_Photos.pdf",
+        "type": "Photos",
+        "title": "Photo Exhibits",
+        "summary": "Numbered, GPS-tagged photographs of the pond and Fish Brook area."
+      },
+      {
+        "file": "Cargill_Field_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Grant Application & Background Materials",
+        "summary": "The full FY2008 Massachusetts Self-Help Program grant application, town meeting records, due-diligence checklists, and state Natural Heritage & Endangered Species fact sheets supporting the acquisition."
+      }
+    ]
+  },
+  "chadwick": {
+    "property_name": "Chadwick Mill",
+    "documents": [
+      {
+        "file": "Chadwick_Mill_Deed_1998.pdf",
+        "type": "Deed",
+        "title": "Quitclaim Deed (1998)",
+        "summary": "Recorded deed (Book 14725, Page 452) conveying roughly 1.75 acres on Main Street, with mill privileges, from Kenneth H. & Jane E. Chadwick to BTA/BOLT, dated April 8, 1998."
+      },
+      {
+        "file": "Chadwick_Mill_Plan_1998.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Plan of Land",
+        "summary": "Plan of the mill lot on Main Street, Boxford."
+      },
+      {
+        "file": "Chadwick_Mill_Deed_2008.pdf",
+        "type": "Deed",
+        "title": "Release Deed (2008)",
+        "summary": "Release deed from Christopher J. Menard to BTA/BOLT, dated October 2008, for the adjoining parcel abutting Anvil Farm and the Town's mill pond land."
+      },
+      {
+        "file": "Chadwick_Mill_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Inspection Report & Plot Plans",
+        "summary": "2007 property inspection report (fee-owned, no CR) and additional plot plan detail."
+      }
+    ]
+  },
+  "chapman_lane": {
+    "property_name": "Chapman Lane",
+    "documents": [
+      {
+        "file": "Chapman_Lane_Acquisition_Correspondence.pdf",
+        "type": "Other / Historical Correspondence",
+        "title": "Acquisition Negotiation Correspondence (1988-1992)",
+        "summary": "Correspondence, deed references, and tax records related to a negotiated but seemingly never-finalized attempt to acquire the Chapman Lane parcel in the late 1980s/early 1990s. No executed Conservation Restriction or recorded deed conveying the property to BTA/BOLT was found."
+      }
+    ],
+    "note": "No recorded CR or deed was found. Per BTA/BOLT, this is being treated as a property pending confirmation of its current legal status \u2014 follow up with trust records."
+  },
+  "coolidge": {
+    "property_name": "Coolidge 100 Acres",
+    "documents": [
+      {
+        "file": "Coolidge_CR_BTABOLT.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (1995) \u2014 BTA/BOLT-held",
+        "summary": "Conservation Restriction recorded December 22, 1995 (Book 13333) granted by Nathaniel S. Coolidge to BTA/BOLT, Inc., restricting wooded land, farmland, and a post-and-rail corridor."
+      },
+      {
+        "file": "Coolidge_CR_EssexCountyGreenbelt.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (1992) \u2014 Essex County Greenbelt-held",
+        "summary": "A separate, earlier Conservation Restriction (Book 11677) granted by Nathaniel S. Coolidge to the Essex County Greenbelt Association in October 1992, covering an adjoining portion of the same property."
+      },
+      {
+        "file": "Coolidge_Supporting_Tax_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "IRS Charitable Donation Form",
+        "summary": "IRS Form 8283 documenting the $675,000 appraised value of the donated Conservation Restriction."
+      }
+    ],
+    "note": "This property has two separate, adjoining Conservation Restrictions held by different organizations \u2014 both are listed above."
+  },
+  "davis": {
+    "property_name": "Davis Hayfield",
+    "documents": [
+      {
+        "file": "Davis_Hayfield_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (2008)",
+        "summary": "Conservation Restriction recorded September 26, 2008 (Book 28061, Page 485) between the Town of Boxford and BTA/BOLT, covering roughly 4.5 acres on Main Street, East Boxford."
+      },
+      {
+        "file": "Davis_Hayfield_Management_Plan.pdf",
+        "type": "Management Plan",
+        "title": "Wildflower & Pollinator Meadow Plan (2021)",
+        "summary": "2021 management plan establishing a wildflower and pollinator meadow on the property."
+      },
+      {
+        "file": "Davis_Hayfield_Baseline_Documentation.pdf",
+        "type": "Supporting Documents",
+        "title": "Baseline Documentation Report (2008)",
+        "summary": "Baseline conditions report with survey plans, site photos, and field inspection forms."
+      },
+      {
+        "file": "Davis_Hayfield_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Correspondence & Certifications",
+        "summary": "Related correspondence and municipal certification records."
+      }
+    ]
+  },
+  "dubrule": {
+    "property_name": "Dubrule",
+    "documents": [
+      {
+        "file": "Dubrule_Deed_2007.pdf",
+        "type": "Deed",
+        "title": "Quitclaim Deed (2007)",
+        "summary": "Recorded deed (Book 27230, Page 587) conveying a 41,980 sq. ft. parcel at 468 Ipswich Road from Diane E. Dubrule (as Executrix of the Estate of Marian D. Dubrule) to BTA-BOLT, Inc., recorded October 2, 2007."
+      },
+      {
+        "file": "Dubrule_Deed_1978.pdf",
+        "type": "Deed",
+        "title": "Quitclaim Deed (1978)",
+        "summary": "Earlier 1978 deed (Book 6478, Page 110) establishing the Dubrule family's tenancy-in-common ownership of the 468 Ipswich Road property."
+      },
+      {
+        "file": "Dubrule_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Survey & Correspondence",
+        "summary": "Assessor records, survey correspondence, and related photos and meeting minutes."
+      }
+    ],
+    "note": "Source documents consistently spell the family name \"Dubrule,\" not \"DeBrule\" \u2014 recommend updating the property list spelling to match."
+  },
+  "dorman": {
+    "property_name": "Dorman Woods",
+    "documents": [
+      {
+        "file": "Dorman_Woods_Deed.pdf",
+        "type": "Deed",
+        "title": "Quitclaim Deed (1996)",
+        "summary": "Deed conveying the 5-acre \"Further Meadow\" parcel from John Dorman to BTA/BOLT for $6,500, executed June 2, 1996 and recorded June 27, 1996. This property is fee-owned with no Conservation Restriction."
+      },
+      {
+        "file": "Dorman_Woods_Plan.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Plans of Land",
+        "summary": "Subdivision plan and hand-drawn survey sketch of the parcel."
+      },
+      {
+        "file": "Dorman_Woods_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Purchase Records",
+        "summary": "Purchase correspondence, project checklists, and a 2007 inspection report confirming no Conservation Restriction exists on this fee-owned property."
+      }
+    ]
+  },
+  "ericson": {
+    "property_name": "Ericson Woods",
+    "documents": [
+      {
+        "file": "Ericson_Woods_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (2005)",
+        "summary": "Conservation Restriction recorded December 23, 2005 (Book 25225, Page 138) granted by BTA/BOLT, Inc. to the Essex County Greenbelt Association, on roughly 15 acres donated by William B. & Katherine Edith Ericson in November 2004."
+      },
+      {
+        "file": "Ericson_Woods_Plan.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Plans & Maps",
+        "summary": "Survey plan, aerial orthophoto, and USGS quadrangle map of the property."
+      },
+      {
+        "file": "Ericson_Woods_Photos.pdf",
+        "type": "Photos",
+        "title": "Site & Baseline Photos",
+        "summary": "Baseline and monitoring photographs with GPS-tagged photo points."
+      },
+      {
+        "file": "Ericson_Woods_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Appraisal & Monitoring Records",
+        "summary": "2004 appraisal report, donation correspondence, and monitoring records through 2013."
+      }
+    ]
+  },
+  "hemlock": {
+    "property_name": "Hemlock Junction",
+    "documents": [
+      {
+        "file": "Hemlock_Junction_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Wetlands Permit & Site Plan (2017)",
+        "summary": "A 2017 Massachusetts DEP wetlands-permit determination and site plan for trail construction near wetlands. No Conservation Restriction or deed for this property was found in this scan."
+      }
+    ],
+    "note": "No CR or deed was located for this property in this scan batch \u2014 confirm whether one exists elsewhere."
+  },
+  "hills": {
+    "property_name": "Hills Property",
+    "documents": [
+      {
+        "file": "Hills_Property_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Deed of Conservation Restriction",
+        "summary": "Conservation Restriction (Book 27398, Page 413) granted by Judith M. Hills to BTA/BOLT, Inc., covering land off Washington Street, Boxford."
+      },
+      {
+        "file": "Hills_Property_Plan.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Conservation Restriction Plans",
+        "summary": "Exhibit plot plans referenced by the Conservation Restriction."
+      },
+      {
+        "file": "Hills_Property_Photos.pdf",
+        "type": "Photos",
+        "title": "Site Photos",
+        "summary": "Color site photographs of fields, tree lines, and lot boundaries."
+      },
+      {
+        "file": "Hills_Property_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Application & Correspondence",
+        "summary": "CR application materials, tax notices, and related correspondence."
+      }
+    ]
+  },
+  "owen": {
+    "property_name": "Owen Land",
+    "documents": [
+      {
+        "file": "Owen_Land_Deed.pdf",
+        "type": "Deed",
+        "title": "Quitclaim Deed",
+        "summary": "Deed from Nancy L. Owen conveying \"remaining land\" referenced on a 2004 Essex County Greenbelt Association proposal map for a CR on the property; recorded Book 2335, Plan 12."
+      },
+      {
+        "file": "Owen_Land_Plan.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Proposed CR Map (2004)",
+        "summary": "2004 map by the Essex County Greenbelt Association showing the proposed Owen Conservation Restriction boundaries."
+      },
+      {
+        "file": "Owen_Land_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Property Description",
+        "summary": "Narrative description of the property and its surroundings."
+      }
+    ],
+    "note": "No executed Conservation Restriction instrument was found \u2014 only the underlying deed and a proposal map. Confirm whether a CR was ever finalized."
+  },
+  "perkins": {
+    "property_name": "Perkins Woods",
+    "documents": [
+      {
+        "file": "Perkins_Woods_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (2001)",
+        "summary": "Conservation Restriction granted by Joseph S. Perkins, Jr. and Judith F. Carr, Trustees, to the Essex County Greenbelt Association, executed/acknowledged December 2001, covering 17.78 acres in Howe Village, Boxford."
+      },
+      {
+        "file": "Perkins_Woods_Deed.pdf",
+        "type": "Deed",
+        "title": "Deed & Historical Title Chain",
+        "summary": "Deed conveying the property along with a historical title chain referencing a Maine-probated estate."
+      },
+      {
+        "file": "Perkins_Woods_Plan_and_Baseline.pdf",
+        "type": "Supporting Documents",
+        "title": "Plans & Baseline Documentation",
+        "summary": "Assessor sketch maps, baseline photo key, and a 2007 baseline photo log."
+      },
+      {
+        "file": "Perkins_Woods_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Title & Closing Records",
+        "summary": "Recording index, tax lien releases, and closing settlement statement."
+      }
+    ]
+  },
+  "potters": {
+    "property_name": "Potter's Farm",
+    "documents": [
+      {
+        "file": "Potters_Farm_Ecological_Management_Plan.pdf",
+        "type": "Management Plan",
+        "title": "Ecological Management Plan (1994-95)",
+        "summary": "Ecological Management Plan for the Hoveys Pond Conservation Area (Potter's Farm), prepared for the Boxford Open Land Trust, covering wildlife management goals, cover-type maps, and species lists."
+      },
+      {
+        "file": "Potters_Farm_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Plant Inventory & Field Data",
+        "summary": "1994 plant community inventory report and field sampling data for trees, saplings, and shrubs."
+      },
+      {
+        "file": "Potters_Farm_Narrative.pdf",
+        "type": "Other / Narrative",
+        "title": "Property Narrative",
+        "summary": "A one-paragraph description noting the 70-acre parcel was acquired by BTA/BOLT on March 25, 1994, and includes vernal pools and mature hemlocks."
+      }
+    ],
+    "note": "No executed Conservation Restriction or deed was located for Potter's Farm itself \u2014 only a management plan and a brief narrative. Content from an originally misfiled scan (which was actually Townsend Farms material) has been moved to the Townsend Farms folder."
+  },
+  "price": {
+    "property_name": "Price Property",
+    "documents": [
+      {
+        "file": "Price_Property_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (2001)",
+        "summary": "Conservation Restriction granted by the Price Family Trust (Richard Hubbard Price, Joan Graham Price, Thomas Anthony Price, Trustees) to the Essex County Greenbelt Association and BTA/BOLT, signed December 28, 2001."
+      },
+      {
+        "file": "Price_Property_Deed_2002.pdf",
+        "type": "Deed",
+        "title": "Quitclaim Deed (2002/2003)",
+        "summary": "Deed conveying the property, recorded Book 10954, Page 204."
+      },
+      {
+        "file": "Price_Property_Deed_Family_Trust.pdf",
+        "type": "Deed",
+        "title": "Quitclaim Deed (Family Trust)",
+        "summary": "Related deed between Richard Hubbard Price and Joan Graham Price and the Price Family Trust."
+      },
+      {
+        "file": "Price_Property_Photos.pdf",
+        "type": "Photos",
+        "title": "Inspection Photos (2007)",
+        "summary": "Site inspection photographs from a 2007 monitoring visit."
+      },
+      {
+        "file": "Price_Property_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Inspection Reports & Correspondence",
+        "summary": "Annual monitoring inspection reports and related correspondence."
+      }
+    ]
+  },
+  "shulman": {
+    "property_name": "Shulman Woods",
+    "documents": [
+      {
+        "file": "Shulman_Woods_Deed.pdf",
+        "type": "Deed",
+        "title": "Quitclaim Deed (1997)",
+        "summary": "Recorded deed (Book 16670, Page 604) from Peter J. Shulman, dated April 2, 1997, conveying interest in the Peabody Meadow subdivision lots."
+      },
+      {
+        "file": "Shulman_Woods_Draft_Restrictive_Covenant_Unexecuted.pdf",
+        "type": "Other / Draft",
+        "title": "Draft Declaration of Restrictive Covenants (unexecuted)",
+        "summary": "An unsigned draft restrictive covenant for the Peabody Meadow subdivision \u2014 never executed."
+      },
+      {
+        "file": "Shulman_Woods_Plan.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Plans & Confirmation Plan",
+        "summary": "Assessor parcel maps and a 1990 Land Court confirmation plan."
+      },
+      {
+        "file": "Shulman_Woods_Photos.pdf",
+        "type": "Photos",
+        "title": "Wetland Monitoring Photos (2007)",
+        "summary": "GPS-labeled wetland boundary monitoring photographs."
+      },
+      {
+        "file": "Shulman_Woods_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Correspondence & Memos",
+        "summary": "Legal correspondence and an internal BTA/BOLT memo regarding the property."
+      }
+    ]
+  },
+  "stevens": {
+    "property_name": "Stevens Pond",
+    "documents": [
+      {
+        "file": "Stevens_Pond_Deed.pdf",
+        "type": "Deed",
+        "title": "Quitclaim Deed (1998)",
+        "summary": "Deed from Beverly National Bank to BTA/BOLT, executed December 24, 1998, acquired via a foreclosure sale of the 22-acre parcel on Batchelder Road."
+      },
+      {
+        "file": "Stevens_Pond_Plan.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Plans & Maps",
+        "summary": "USGS topographic map and hand-drawn parcel boundary sketches."
+      },
+      {
+        "file": "Stevens_Pond_Photos.pdf",
+        "type": "Photos",
+        "title": "Monitoring Photos (2007)",
+        "summary": "Numbered, GPS-tagged monitoring photographs of the property boundaries."
+      },
+      {
+        "file": "Stevens_Pond_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Foreclosure & Right-of-First-Refusal Records",
+        "summary": "Notice of mortgagee's foreclosure sale and the release of the Town's right of first refusal."
+      }
+    ]
+  },
+  "townsend": {
+    "property_name": "Townsend Farms",
+    "documents": [
+      {
+        "file": "Townsend_Farms_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (2007)",
+        "summary": "Conservation Restriction between BTA/BOLT and the Town of Boxford Conservation Commission, approved by the Secretary of Energy and Environmental Affairs April 6, 2007."
+      },
+      {
+        "file": "Townsend_Farms_Deed.pdf",
+        "type": "Deed",
+        "title": "Deeds (2002, 2004)",
+        "summary": "Deeds conveying the property, including a 2004 deed from the Townsend Farms Greenbelt Association to BTA/BOLT."
+      },
+      {
+        "file": "Townsend_Farms_Easement_1986.pdf",
+        "type": "Easement",
+        "title": "Trail Easement (1986)",
+        "summary": "1986 deed of easement granting trail access, from Peter S. Confalone and Douglas R. Cone, recorded November 19, 1986."
+      },
+      {
+        "file": "Townsend_Farms_Photos_and_Plan.pdf",
+        "type": "Photos",
+        "title": "Monitoring Photos (2003)",
+        "summary": "Numbered, GPS-tagged 2003 monitoring photographs."
+      },
+      {
+        "file": "Townsend_Farms_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Application & Correspondence",
+        "summary": "CR application forms, GIS data forms, and related correspondence."
+      },
+      {
+        "file": "Townsend_Farms_Deed_2002_recovered.pdf",
+        "type": "Deed",
+        "title": "Deed (2002, recovered)",
+        "summary": "A 2002 quitclaim deed from the Townsend Farms Greenbelt Association to BTA/BOLT, recovered from a file that had been misfiled under \"Potter's Farm.\""
+      },
+      {
+        "file": "Townsend_Farms_Baseline_Photos_recovered.pdf",
+        "type": "Photos",
+        "title": "Baseline Photos (recovered)",
+        "summary": "Baseline photographs of the 70-acre parcel (BOX-I), recovered from the misfiled scan."
+      },
+      {
+        "file": "Townsend_Farms_Title_Insurance_recovered.pdf",
+        "type": "Supporting Documents",
+        "title": "Title Insurance Policy (recovered)",
+        "summary": "Title insurance policy covering the property, recovered from the misfiled scan."
+      },
+      {
+        "file": "Townsend_Farms_CR_full_recovered.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (full text, recovered)",
+        "summary": "A fuller copy of the Conservation Restriction text, recovered from the file that had been misfiled under \"Potter's Farm.\""
+      }
+    ],
+    "note": "Includes documents recovered from a file originally misfiled as \"Potter's Farm.\""
+  },
+  "shaven": {
+    "property_name": "Shaven Crown",
+    "documents": [
+      {
+        "file": "Shaven_Crown_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Holsinger Conservation Restriction (1989)",
+        "summary": "Conservation Restriction granted by Jerry L. Holsinger to the Essex County Greenbelt Association, executed September 6, 1989, approved by the Boxford Board of Selectmen."
+      },
+      {
+        "file": "Shaven_Crown_Plan.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Plans & Maps",
+        "summary": "Survey plans and a USGS topographic locus map of the property."
+      },
+      {
+        "file": "Shaven_Crown_Deed_Chain.pdf",
+        "type": "Deed",
+        "title": "Deed Chain (1972-1997)",
+        "summary": "Chain of deeds tracing ownership from Holsinger to the Tarn Foundation (1995) and from the Tarn Foundation to BTA/BOLT (1997), plus an older 1972 deed."
+      },
+      {
+        "file": "Shaven_Crown_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Monitoring & Correspondence",
+        "summary": "Monitoring documentation from 2006 and 2013, a right-of-first-refusal release, and correspondence regarding a 2015 abutter mowing dispute."
+      }
+    ]
+  },
+  "cedar": {
+    "property_name": "Cedar Pond Society",
+    "documents": [
+      {
+        "file": "Cedar_Pond_Society_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (2000)",
+        "summary": "Conservation Restriction held by BTA/BOLT, Inc., executed and recorded in 2000, protecting a certified vernal pool, wetland, and rock outcroppings on roughly 2 acres off Sheffield Road."
+      },
+      {
+        "file": "Cedar_Pond_Society_Plan.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Plan of Land (1989)",
+        "summary": "1989 survey plan of the property by Hancock Survey Associates."
+      },
+      {
+        "file": "Cedar_Pond_Society_Supporting_Documents.pdf",
+        "type": "Supporting Documents",
+        "title": "Monitoring Reports & Correspondence",
+        "summary": "Multiple years of site-visit inspection reports, photo logs, and related correspondence."
+      }
+    ]
+  },
+  "boxfordcommon": {
+    "property_name": "Boxford Common",
+    "documents": [
+      {
+        "file": "Boxford_Common_CR.pdf",
+        "type": "Conservation Restriction",
+        "title": "Conservation Restriction (2019)",
+        "summary": "Conservation Restriction between BTA/BOLT, Inc. and the Town of Boxford, signed September 11, 2019, with acknowledgment by the MA Division of Fisheries & Wildlife and acceptance by the Boxford Conservation Commission."
+      },
+      {
+        "file": "Boxford_Common_Plan.pdf",
+        "type": "Plot Plan / Survey",
+        "title": "Conservation Restriction Plan & Order of Taking",
+        "summary": "Exhibit plan of the premises and a copy of the Town's 2007 Order of Taking."
+      },
+      {
+        "file": "Boxford_Common_Town_Meeting_Records.pdf",
+        "type": "Other",
+        "title": "Town Meeting Records",
+        "summary": "Excerpts from the 2007 Special and Annual Town Meeting votes authorizing the Town's acquisition of the property."
+      },
+      {
+        "file": "Boxford_Common_Photos.pdf",
+        "type": "Photos",
+        "title": "Site Photos",
+        "summary": "Site and monitoring photographs of trails, habitat, and boundary markers."
+      },
+      {
+        "file": "Boxford_Common_Correspondence.pdf",
+        "type": "Supporting Documents",
+        "title": "Correspondence",
+        "summary": "Email correspondence regarding CR monitoring and related community matters."
+      }
+    ]
+  }
+}
