@@ -1,147 +1,228 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conservation Restriction Monitoring Report</title>
     <style>
+        * { box-sizing: border-box; }
+
         body {
             font-family: Arial, sans-serif;
             max-width: 900px;
-            margin: 20px auto;
+            margin: 10px auto;
+            padding: 0 12px;
             line-height: 1.6;
+            font-size: 16px;
         }
-        h1, h2 {
+
+        h1, h2 { text-align: center; font-size: 1.3em; }
+
+        /* Header */
+        .header-table { border-collapse: collapse; width: 100%; }
+        .header-logo {
+            background-color: #2e7d32;
             text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+            width: 120px;
         }
+        .header-text { vertical-align: middle; padding: 10px; }
+
+        @media (max-width: 480px) {
+            .header-table, .header-table tbody,
+            .header-table tr, .header-table td {
+                display: block; width: 100%;
+            }
+            .header-logo { width: 100%; padding: 14px; }
+            .header-text { font-size: 0.9em; }
+        }
+
+        /* Property info table */
+        .property-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            margin-bottom: 16px;
+        }
+        .property-table th, .property-table td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: left;
+        }
+
+        @media (max-width: 560px) {
+            .property-table thead { display: none; }
+            .property-table tr {
+                display: block;
+                margin-bottom: 6px;
+                border: 1px solid #ccc;
+            }
+            .property-table td {
+                display: block;
+                border: none;
+                border-bottom: 1px solid #eee;
+                padding: 6px 8px;
+            }
+            .property-table td:first-child {
+                font-weight: bold;
+                background: #f5f5f5;
+                font-size: 0.85em;
+                color: #444;
+            }
+        }
+
+        /* Loading banner */
+        #property-loading {
+            background: #e8f5e9;
+            border: 1px solid #a5d6a7;
+            color: #2e7d32;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            font-size: 0.9em;
+            display: none;
+        }
+        #property-source {
+            font-size: 0.82em;
+            color: #555;
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+
+        /* Form elements */
         label {
             font-weight: bold;
             display: block;
-            margin-top: 15px;
+            margin-top: 18px;
+            font-size: 1em;
         }
         input[type="text"],
         input[type="date"],
-        textarea {
+        textarea,
+        select {
             width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            box-sizing: border-box;
+            padding: 10px;
+            margin-top: 6px;
+            font-size: 16px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            appearance: auto;
         }
-        textarea {
-            min-height: 80px;
+        textarea { min-height: 90px; resize: vertical; }
+
+        /* Photo sections */
+        .photo-section {
+            margin-top: 20px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #f9f9f9;
         }
-        .small {
-            width: 200px;
+        .photo-section label { margin-top: 0; font-size: 0.95em; }
+        input[type="file"] {
+            display: block;
+            margin-top: 8px;
+            font-size: 15px;
+            width: 100%;
         }
-        .signature-line {
-            margin-top: 40px;
+
+        input[type="submit"],
+        button[type="button"] {
+            margin-top: 12px;
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
         }
+        input[type="submit"] { background-color: #555; }
+        input[type="submit"]:active,
+        button[type="button"]:active { opacity: 0.8; }
+
+        .save-pdf-wrapper { margin-top: 30px; text-align: center; }
+        .save-pdf-wrapper button { max-width: 300px; }
+        .signature-line { margin-top: 20px; }
+        p em { font-size: 0.95em; }
     </style>
 </head>
 <body>
 
-<table class="header-table" width="100%" cellpadding="10" cellspacing="0" style="border-collapse: collapse;">
-    <tr>
-        <td width="120" style="background-color: #2e7d32; text-align: center; vertical-align: middle;">
-
-
-            <a href="https://christomiller.github.io/BTA-BOLT/">
-
-            <img
-                src="https://static1.squarespace.com/static/5b158505af20962fc8866abc/t/5f13403d0bbd2104ee2028f8/1595097151250/static1.squarespace.png"
-                alt="Boxford Trails Association Logo"
-                style="max-width: 100px; height: auto;">
-                
-            </a>
-        <td style="vertical-align: middle;">
-            <strong>
-                Boxford Trails Association / Boxford Open Land Trust, Inc. (BTA/BOLT)<br>
-                7 Elm St, P.O. Box 95, Boxford, MA 01921<br>
-                978-887-7031
-            </strong>
-        </td>
-    </tr>
+<table class="header-table">
+    <tbody>
+        <tr>
+            <td class="header-logo">
+                <a href="https://christomiller.github.io/BTA-BOLT/">
+                    <img
+                        src="https://static1.squarespace.com/static/5b158505af20962fc8866abc/t/5f13403d0bbd2104ee2028f8/1595097151250/static1.squarespace.png"
+                        alt="Boxford Trails Association Logo"
+                        style="max-width: 100px; height: auto;">
+                </a>
+            </td>
+            <td class="header-text">
+                <strong>
+                    Boxford Trails Association / Boxford Open Land Trust, Inc. (BTA/BOLT)<br>
+                    7 Elm St, P.O. Box 95, Boxford, MA 01921<br>
+                    978-887-7031
+                </strong>
+            </td>
+        </tr>
+    </tbody>
 </table>
-
-
 
 <h1><u>Monitoring Report</u></h1>
 
+<p><em><u>Note:</u> If possible add a photograph of anything that is pertinent which will aid in follow-up or future monitoring. Email btareports@gmail.com or upload to the Property's Web Page using the button below.</em></p>
 
-<p><em><u>Note:</u> If possible add a photograph anything that is pertinent which will aid in follow-up or future monitoring.  Email btareports@gmail.com or upload to the Property's Web Page using button below.</em></p>
+<div id="property-loading">Loading property information…</div>
+<div id="property-source"></div>
 
-
-
-<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; font-family: Arial, sans-serif;">
-    <tr>
-        <th align="left" width="35%">Property Info</th>
-        <th align="left" width="65%"><b> </b></th>
-    </tr>
-
-    <tr><td>Property name</td><td>Alpers Woodlot</td></tr>
-    <tr><td>Location of property (street address)</td><td>Off Herrick Rd. across from Wildcat parking lot</td></tr>
-    <tr><td>Best Entry into property</td><td>Off Herrick Rd. across from Wildcat parking lot</td></tr>
-    <tr><td>Size in acres</td><td>14</td></tr>
-    <tr><td>Present use of restricted property</td><td>Boating and passive recreation</td></tr>
-    <tr><td>Current owner's name</td><td>BTA.BOLT</td></tr>
-    <tr><td>Conservation Restriction?</td><td>No</td></tr>
-    <tr><td>CR Owner</td><td>none</td></tr>
-
+<table class="property-table">
+    <thead>
+        <tr>
+            <th width="35%">Property Info</th>
+            <th width="65%">&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Property name</td>             <td id="prop-name">—</td></tr>
+        <tr><td>Location of property (street address)</td><td id="prop-location">—</td></tr>
+        <tr><td>Best Entry into property</td>  <td id="prop-entry">—</td></tr>
+        <tr><td>Size in acres</td>             <td id="prop-acres">—</td></tr>
+        <tr><td>Present use of restricted property</td><td id="prop-use">—</td></tr>
+        <tr><td>Current owner's name</td>      <td id="prop-owner">—</td></tr>
+        <tr><td>Conservation Restriction?</td> <td id="prop-cr">—</td></tr>
+        <tr><td>CR Owner</td>                  <td id="prop-cr-holder">—</td></tr>
+    </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<form>
-
-
+<form id="monitoringForm">
 
     <label>1. Date of inspection:</label>
     <input type="date" name="inspection_date">
 
-   <label>2. Reason for inspection:</label>
-<select name="reason_for_inspection">
-    <option value="" disabled selected>Select a reason</option>
-    <option value="Annual monitoring">Annual monitoring</option>
-    <option value="Abutters' Request">Abutters' Request</option>
-    <option value="Follow-up">Follow-up</option>
-</select>
-
-  
+    <label>2. Reason for inspection:</label>
+    <select name="reason_for_inspection">
+        <option value="" disabled selected>Select a reason</option>
+        <option value="Annual monitoring">Annual monitoring</option>
+        <option value="Abutters' Request">Abutters' Request</option>
+        <option value="Follow-up">Follow-up</option>
+    </select>
 
     <label>3. Did the owner of the property accompany you on the inspection?</label>
     <select name="owner_accompanied">
-    <option value="" disabled selected>Select an Option</option>
-    <option value="Annual monitoring">No</option>
-    <option value="Abutters' Request">Yes</option>
-</select>
-
-
+        <option value="" disabled selected>Select an Option</option>
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+    </select>
 
     <label>4. Describe the details of your inspection (where you walked, etc.):</label>
     <textarea name="inspection_details"></textarea>
-
-    
 
     <label>5. Note any possible violations of the terms of the conservation restriction:</label>
     <textarea name="possible_violations"></textarea>
@@ -177,60 +258,145 @@
         <input type="text" name="signature">
     </div>
 
-<i>Photos for Report (up to 3)</i>
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <label>Select photo 1 to upload your report</label><br>
-        <input type="file" name="uploadedFile" required><br>
-        <input type="submit" value="Upload File"></ul>
-    </form>
+    <div class="photo-section">
+        <label>Photos for Report (up to 3)</label>
 
+        <label style="font-weight:normal; margin-top:14px;">Photo 1</label>
+        <input type="file" name="photo1" accept="image/*">
+        <input type="submit" value="Upload Photo 1" formaction="upload.php" formmethod="post" formenctype="multipart/form-data">
 
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <label>Select photo 2 to upload your report</label><br>
-        <input type="file" name="uploadedFile" required><br>
-        <input type="submit" value="Upload File"></ul>
-    </form>
+        <label style="font-weight:normal; margin-top:14px;">Photo 2</label>
+        <input type="file" name="photo2" accept="image/*">
+        <input type="submit" value="Upload Photo 2" formaction="upload.php" formmethod="post" formenctype="multipart/form-data">
 
+        <label style="font-weight:normal; margin-top:14px;">Photo 3</label>
+        <input type="file" name="photo3" accept="image/*">
+        <input type="submit" value="Upload Photo 3" formaction="upload.php" formmethod="post" formenctype="multipart/form-data">
+    </div>
 
-	    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <label>Select photo 3 to upload your report</label><br>
-        <input type="file" name="uploadedFile" required><br>
-        <input type="submit" value="Upload File"></ul>
-    </form>
-
-	
-<div style="margin-top: 30px; text-align: center;">
-    <button type="button" onclick="saveToPDF()" style="padding: 10px 20px; font-size: 16px;">
-        Save to PDF
-    </button>
-</div>
+    <div class="save-pdf-wrapper">
+        <button type="button" onclick="saveToPDF()">Save to PDF</button>
+    </div>
 </form>
 
-
-
-	
 <script>
+// ─── Property field mapping ────────────────────────────────────────────────
+// Maps label text found in the property page table → the <td id> in this form
+const FIELD_MAP = [
+    { label: /property name/i,             id: 'prop-name'      },
+    { label: /location of property/i,      id: 'prop-location'  },
+    { label: /best entry/i,                id: 'prop-entry'     },
+    { label: /size in acres/i,             id: 'prop-acres'     },
+    { label: /present use of restricted/i, id: 'prop-use'       },
+    { label: /current owner/i,             id: 'prop-owner'     },
+    { label: /conservation restriction\?/i,id: 'prop-cr'        },
+    { label: /conservation restriction holder|cr owner/i, id: 'prop-cr-holder' },
+];
+
+function fillPropertyTable(rows) {
+    rows.forEach(({ label, value }) => {
+        const mapping = FIELD_MAP.find(m => m.label.test(label));
+        if (mapping) {
+            const cell = document.getElementById(mapping.id);
+            if (cell) cell.textContent = value || '—';
+        }
+    });
+}
+
+function parsePropertyRows(html) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const rows = [];
+
+    // Look for a table that has "Property" in its first header cell
+    const tables = doc.querySelectorAll('table');
+    for (const table of tables) {
+        const headers = table.querySelectorAll('th');
+        const firstHeader = headers[0] ? headers[0].textContent.trim() : '';
+        if (/property/i.test(firstHeader)) {
+            table.querySelectorAll('tr').forEach(tr => {
+                const cells = tr.querySelectorAll('td');
+                if (cells.length >= 2) {
+                    rows.push({
+                        label: cells[0].textContent.trim(),
+                        value: cells[1].textContent.trim()
+                    });
+                }
+            });
+            break;
+        }
+    }
+
+    // Also try to get property name from h1 as a fallback label
+    if (rows.length === 0) {
+        const h1 = doc.querySelector('h1');
+        if (h1) rows.push({ label: 'Property name', value: h1.textContent.trim() });
+    }
+
+    return rows;
+}
+
+async function loadPropertyFromReferrer() {
+    const referrer = document.referrer;
+    const sameOrigin = referrer &&
+        (referrer.startsWith(window.location.origin) ||
+         referrer.includes('christomiller.github.io'));
+
+    if (!sameOrigin) {
+        document.getElementById('property-source').textContent =
+            'Open this form from a property page to auto-fill property information.';
+        return;
+    }
+
+    const loadingBanner = document.getElementById('property-loading');
+    loadingBanner.style.display = 'block';
+
+    try {
+        const res = await fetch(referrer);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const html = await res.text();
+        const rows = parsePropertyRows(html);
+
+        if (rows.length > 0) {
+            fillPropertyTable(rows);
+            // Extract property name for the source note
+            const nameRow = rows.find(r => /property name/i.test(r.label));
+            const propName = nameRow ? nameRow.value : new URL(referrer).pathname;
+            document.getElementById('property-source').textContent =
+                'Property information loaded from: ' + propName;
+        } else {
+            document.getElementById('property-source').textContent =
+                'Could not read property data from the referring page.';
+        }
+    } catch (e) {
+        document.getElementById('property-source').textContent =
+            'Could not load property information (' + e.message + ').';
+    } finally {
+        loadingBanner.style.display = 'none';
+    }
+}
+
+// Run on page load
+loadPropertyFromReferrer();
+
+// ─── Save to PDF ───────────────────────────────────────────────────────────
 function saveToPDF() {
     const { jsPDF } = window.jspdf;
-
-    const element = document.body; // capture entire page
-
+    const element = document.body;
     html2canvas(element, { scale: 2 }).then(canvas => {
         const imgData = canvas.toDataURL("image/png");
-
         const pdf = new jsPDF("p", "mm", "letter");
         const pdfWidth = pdf.internal.pageSize.getWidth();
         const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-
-        let position = 0;
-        pdf.addImage(imgData, "PNG", 0, position, pdfWidth, pdfHeight);
-
-        pdf.save("Conservation_Monitoring_Report.pdf");
+        pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+        // Use property name in filename if available
+        const propName = document.getElementById('prop-name').textContent.trim();
+        const safeName = propName && propName !== '—'
+            ? propName.replace(/[^a-z0-9]/gi, '_')
+            : 'Property';
+        pdf.save(safeName + '_Monitoring_Report.pdf');
     });
 }
 </script>
-
 </body>
 </html>
-
-
